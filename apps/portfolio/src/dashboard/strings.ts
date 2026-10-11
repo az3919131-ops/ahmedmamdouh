@@ -137,6 +137,13 @@ export const D = {
     save: { ar: "احفظ واختبر الاتصال", en: "Save and test connection" } as Bi,
     saved: { ar: "تم الاتصال بنجاح", en: "Connected successfully" } as Bi,
     contract: { ar: "شكل الطلبات", en: "Request format" } as Bi,
+    links: {
+      dashboardWorkflow: { ar: "افتح workflow اللوحة", en: "Open dashboard workflow" } as Bi,
+      dataTables: { ar: "افتح جداول البيانات", en: "Open data tables" } as Bi,
+      autoReplyWorkflow: { ar: "افتح workflow الرد الآلي", en: "Open auto-reply workflow" } as Bi,
+      credentials: { ar: "افتح بيانات الاعتماد", en: "Open credentials" } as Bi,
+      meta: { ar: "تطبيق Meta (واتساب)", en: "Meta app (WhatsApp)" } as Bi,
+    },
     steps: {
       publish: {
         ar: "في n8n: افتح workflow «واجهة لوحة التحكم – أحمد» ثم انشره (Publish).",

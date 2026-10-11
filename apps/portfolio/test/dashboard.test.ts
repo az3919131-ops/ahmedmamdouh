@@ -130,3 +130,15 @@ describe("أدوات مساعدة", () => {
     expect(parseRoute("#/x")).toEqual({ name: "not-found" });
   });
 });
+
+import { n8nLinks } from "../src/lib/n8nLinks";
+describe("روابط n8n المباشرة", () => {
+  it("تُبنى من عنوان الخادم وتتجاهل الشرطة الأخيرة", () => {
+    const l = n8nLinks("https://n8n.example.com//");
+    expect(l?.dashboardWorkflow).toBe("https://n8n.example.com/workflow/CkNNYICjLShIs9k7");
+    expect(l?.autoReplyWorkflow).toBe("https://n8n.example.com/workflow/A3nq2aTBFgpF4JCq");
+    expect(l?.credentials).toBe("https://n8n.example.com/home/credentials");
+    expect(l?.dataTables).toBe("https://n8n.example.com/projects/NXiVEPvIE28h3Eku/datatables");
+  });
+  it("بلا عنوان خادم لا روابط", () => expect(n8nLinks("  ")).toBeNull());
+});
