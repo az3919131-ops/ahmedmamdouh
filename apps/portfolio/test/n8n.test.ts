@@ -7,10 +7,11 @@ const ok = (status = 200) => new Response("{}", { status });
 beforeEach(() => localStorage.clear());
 
 describe("إعدادات n8n", () => {
-  it("بلا عنوان خادم لا يوجد webhook (غير مضبوط)", () => {
+  it("بلا تعديل يدوي يُستعمل خادم n8n الافتراضي لصاحب الموقع", () => {
     const r = resolveN8n({ baseUrl: "", webhookUrl: "", formUrl: "" });
-    expect(r.configured).toBe(false);
-    expect(r.webhookUrl).toBe("");
+    expect(r.baseUrl).toBe("https://vmi3330209.contaboserver.net");
+    expect(r.webhookUrl).toBe("https://vmi3330209.contaboserver.net/webhook/0818531a-3892-49f6-af78-cde8d538b205");
+    expect(r.configured).toBe(true);
   });
 
   it("يشتق webhook والنموذج من عنوان الخادم ومعرّف 0818531a…", () => {

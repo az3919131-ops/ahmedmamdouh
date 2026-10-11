@@ -5,13 +5,16 @@ const env = import.meta.env as Record<string, string | undefined>;
 
 const trimSlash = (s: string) => s.trim().replace(/\/+$/, "");
 
+/** خادم n8n الخاص بصاحب الموقع؛ يُستبدل بـ VITE_N8N_BASE_URL (وقيمة فارغة صريحة تعطّل الافتراضي) */
+const DEFAULT_N8N_BASE_URL = "https://vmi3330209.contaboserver.net";
+
 export const config = {
   /** رقم واتساب بصيغة دولية بلا + ولا مسافات */
   whatsappNumber: (env.VITE_WHATSAPP_NUMBER || "966501787433").replace(/\D/g, ""),
   email: "az3919131@gmail.com",
   linkedin: "https://www.linkedin.com/in/ahmed-zahran-8b7730340",
-  /** عنوان خادم n8n بلا شرطة أخيرة. فارغ = غير مضبوط بعد */
-  n8nBaseUrl: trimSlash(env.VITE_N8N_BASE_URL || ""),
+  /** عنوان خادم n8n بلا شرطة أخيرة */
+  n8nBaseUrl: trimSlash(env.VITE_N8N_BASE_URL ?? DEFAULT_N8N_BASE_URL),
   /** معرّف webhook / نموذج مراجعة الصفحة والتعليقات */
   n8nWebhookId: (env.VITE_N8N_WEBHOOK_ID || "0818531a-3892-49f6-af78-cde8d538b205").trim(),
   /** مسار webhook لوحة التحكم داخل n8n */

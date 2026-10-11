@@ -25,12 +25,23 @@ npm run typecheck -w @nmwabran/portfolio
 | المتغير | الوظيفة |
 |---|---|
 | `VITE_WHATSAPP_NUMBER` | رقم واتساب الدولي بلا `+` (الافتراضي `966501787433`) |
-| `VITE_N8N_BASE_URL` | عنوان خادم n8n؛ منه تُشتق روابط المراجعة والنموذج ولوحة التحكم |
+| `VITE_N8N_BASE_URL` | عنوان خادم n8n؛ منه تُشتق روابط المراجعة والنموذج ولوحة التحكم (الافتراضي المدمج: خادمك الحالي؛ القيمة الفارغة تعطّله) |
 | `VITE_N8N_WEBHOOK_ID` | معرّف webhook/نموذج «مراجعة الصفحة والتعليقات» (`0818531a-…`) |
 | `VITE_N8N_DASHBOARD_PATH` | مسار webhook لوحة التحكم (الافتراضي `ahmed-dashboard`) |
 | `VITE_SITE_URL` | عنوان الموقع العام لملء حقل «رابط الصفحة» |
 
 > متغيرات `VITE_*` تُدمج في الملفات العامة؛ لا تضع فيها أسرارًا. مفتاح لوحة التحكم يُدخل في المتصفح فقط.
+
+## النشر
+
+الناتج ملفات ثابتة (`apps/portfolio/dist`) تُنشر على أي استضافة، ويتضمن `_headers` (ترويسات أمان وتخزين مؤقت للأصول) يفهمه Netlify.
+
+```bash
+npm run build -w @nmwabran/portfolio
+npx netlify-cli deploy --prod --dir apps/portfolio/dist     # أو اسحب المجلد إلى https://app.netlify.com/drop
+```
+
+بعد النشر افتح `/#/dashboard` وأدخل مفتاحك؛ رابط الـ webhook معبّأ تلقائيًا من خادم n8n الافتراضي.
 
 ## تعديل المحتوى
 
