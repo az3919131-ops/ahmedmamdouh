@@ -6,7 +6,7 @@ describe("واتساب", () => {
   it("يبني رابط api.whatsapp.com برقم المالك ونص مرمّز", () => {
     const u = new URL(waLink("مرحبا & أهلا"));
     expect(u.origin + u.pathname).toBe("https://api.whatsapp.com/send");
-    expect(u.searchParams.get("phone")).toBe("966501787433");
+    expect(u.searchParams.get("phone")).toBe("966565324387");
     expect(u.searchParams.get("text")).toBe("مرحبا & أهلا");
   });
 
@@ -24,7 +24,7 @@ describe("واتساب", () => {
   });
 
   it("ينسّق الرقم السعودي", () => {
-    expect(formatPhone("966501787433")).toBe("+966 50 178 7433");
+    expect(formatPhone("966565324387")).toBe("+966 56 532 4387");
     expect(formatPhone("20100")).toBe("+20100");
   });
 });

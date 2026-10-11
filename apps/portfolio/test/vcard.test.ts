@@ -7,7 +7,7 @@ describe("vCard", () => {
     expect(v.startsWith("BEGIN:VCARD\r\nVERSION:3.0\r\n")).toBe(true);
     expect(v.trimEnd().endsWith("END:VCARD")).toBe(true);
     expect(v).toContain("FN:أحمد ممدوح زهران");
-    expect(v).toContain("TEL;TYPE=CELL,VOICE,WORK:+966501787433");
+    expect(v).toContain("TEL;TYPE=CELL,VOICE,WORK:+966565324387");
     expect(v).toContain("EMAIL;TYPE=INTERNET,WORK:az3919131@gmail.com");
     expect(v).toContain("N:Zahran;Ahmed;Mamdouh;;");
     expect(v).not.toMatch(/[^\r]\n/); // كل الأسطر CRLF

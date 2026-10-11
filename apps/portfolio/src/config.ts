@@ -10,7 +10,7 @@ const DEFAULT_N8N_BASE_URL = "https://vmi3330209.contaboserver.net";
 
 export const config = {
   /** رقم واتساب بصيغة دولية بلا + ولا مسافات */
-  whatsappNumber: (env.VITE_WHATSAPP_NUMBER || "966501787433").replace(/\D/g, ""),
+  whatsappNumber: (env.VITE_WHATSAPP_NUMBER || "966565324387").replace(/\D/g, ""),
   email: "az3919131@gmail.com",
   linkedin: "https://www.linkedin.com/in/ahmed-zahran-8b7730340",
   /** عنوان خادم n8n بلا شرطة أخيرة */
@@ -30,7 +30,7 @@ export const signature = {
   plain: "Project manager · Eng. Ahmed Zahran",
 } as const;
 
-/** +966501787433 → +966 50 178 7433 (تنسيق سعودي؛ غيره يُعرض كما هو مع +) */
+/** +966565324387 → +966 56 532 4387 (تنسيق سعودي؛ غيره يُعرض كما هو مع +) */
 export function formatPhone(digits: string): string {
   const m = /^966(\d{2})(\d{3})(\d{4})$/.exec(digits);
   return m ? `+966 ${m[1]} ${m[2]} ${m[3]}` : `+${digits}`;
