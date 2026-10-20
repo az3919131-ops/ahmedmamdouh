@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="page.home.title"></title>
+  <meta name="description" data-i18n-content="page.home.desc" content="">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:type" content="website">
+  <meta property="og:title" data-i18n-content="page.home.title" content="">
+  <meta property="og:description" data-i18n-content="page.home.desc" content="">
+  <link rel="canonical" href="{{SITE_URL}}/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/reem-kufi-arabic-700-normal.woff2">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="home">
+<!--@include header-->
+
+<main id="main">
+  <!-- ───── البطل: الخط الزمني ───── -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1 data-i18n="hero.title"></h1>
+        <p class="lead" data-i18n="hero.lead"></p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="#packages" data-i18n="hero.cta.primary"></a>
+          <a class="btn btn-ghost btn-lg" href="#process" data-i18n="hero.cta.secondary"></a>
+        </div>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.fact1"></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.fact2"></span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.fact3"></span></li>
+        </ul>
+      </div>
+
+      <figure class="nle" aria-labelledby="nle-caption">
+        <div class="nle-ruler">
+          <span></span>
+          <div class="nle-ticks" aria-hidden="true"><span>00:00</span><span>00:10</span><span>00:20</span><span>00:30</span></div>
+        </div>
+        <div class="nle-body">
+          <div class="track-name" aria-hidden="true">V2</div>
+          <div class="lane">
+            <span class="clip clip-promo" style="--s:0;--w:33">Vidu AI</span>
+            <span class="clip clip-promo" style="--s:34;--w:31">Vidu AI</span>
+            <span class="clip clip-promo" style="--s:66;--w:34">Vidu AI</span>
+          </div>
+          <div class="track-name" aria-hidden="true">V1</div>
+          <div class="lane">
+            <span class="clip clip-doc" style="--s:5;--w:90">HeyGen, Synthesia, D-ID</span>
+          </div>
+          <div class="track-name" aria-hidden="true">A1</div>
+          <div class="lane">
+            <span class="clip clip-edu clip-wave" style="--s:0;--w:100">Voice-over</span>
+          </div>
+          <div class="track-name" aria-hidden="true">FX</div>
+          <div class="lane">
+            <span class="clip clip-addon" style="--s:10;--w:34">CapCut Pro</span>
+            <span class="clip clip-addon" style="--s:56;--w:34">CapCut Pro</span>
+          </div>
+          <div class="nle-play" aria-hidden="true">
+            <div class="playhead"><span class="playhead-tc" id="nle-tc">00:30</span></div>
+          </div>
+        </div>
+        <figcaption class="nle-caption" id="nle-caption" data-i18n="nle.caption"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ───── الباقات ───── -->
+  <section class="section" id="packages">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="packages.title"></h2>
+        <p class="lead" data-i18n="packages.lead"></p>
+      </div>
+
+      <div class="chips" id="chips" role="group" data-i18n-aria="filter.label">
+        <button type="button" class="chip" data-cat="all" aria-pressed="true" data-i18n="filter.all"></button>
+        <button type="button" class="chip" data-cat="promo" aria-pressed="false" data-i18n="filter.promo"></button>
+        <button type="button" class="chip" data-cat="documentary" aria-pressed="false" data-i18n="filter.documentary"></button>
+        <button type="button" class="chip" data-cat="educational" aria-pressed="false" data-i18n="filter.educational"></button>
+      </div>
+
+      <div id="catalog" aria-live="polite" aria-busy="true">
+        <div class="skeleton-grid" aria-hidden="true"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </div>
+
+      <div class="addons-head" id="addons-head" hidden>
+        <h3 data-i18n="addons.title"></h3>
+        <p class="muted" data-i18n="addons.lead"></p>
+      </div>
+      <ul class="addon-list" id="addons" hidden></ul>
+    </div>
+  </section>
+
+  <!-- ───── كيف نعمل (تسلسل حقيقي) ───── -->
+  <section class="section section-alt" id="process">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="process.title"></h2></div>
+      <ol class="steps">
+        <li class="step"><h3 data-i18n="process.1.t"></h3><p data-i18n="process.1.d"></p></li>
+        <li class="step"><h3 data-i18n="process.2.t"></h3><p data-i18n="process.2.d"></p></li>
+        <li class="step"><h3 data-i18n="process.3.t"></h3><p data-i18n="process.3.d"></p></li>
+        <li class="step"><h3 data-i18n="process.4.t"></h3><p data-i18n="process.4.d"></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───── الأسئلة الشائعة ───── -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2 data-i18n="faq.title"></h2></div>
+      <div class="faq">
+        <details><summary data-i18n="faq.1.q"></summary><p data-i18n="faq.1.a"></p></details>
+        <details><summary data-i18n="faq.2.q"></summary><p data-i18n="faq.2.a"></p></details>
+        <details><summary data-i18n="faq.3.q"></summary><p data-i18n="faq.3.a"></p></details>
+        <details><summary data-i18n="faq.4.q"></summary><p data-i18n="faq.4.a"></p></details>
+        <details><summary data-i18n="faq.5.q"></summary><p data-i18n="faq.5.a"></p></details>
+        <details><summary data-i18n="faq.6.q"></summary><p data-i18n="faq.6.a"></p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── التواصل ───── -->
+  <section class="section section-alt" id="contact">
+    <div class="wrap contact">
+      <h2 data-i18n="contact.title"></h2>
+      <p class="lead" data-i18n="contact.lead"></p>
+      <div class="contact-actions">
+        <a class="btn btn-primary btn-lg" data-contact="whatsapp" target="_blank" rel="noopener noreferrer" data-i18n="contact.wa"></a>
+        <a class="btn btn-ghost btn-lg" data-contact="email" data-i18n="contact.mail"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--@include footer-->
+<!--@include cart-drawer-->
+
+<script src="/js/config.js"></script>
+<script src="/vendor/supabase.js" defer></script>
+<script type="module" src="/js/home.js"></script>
+</body>
+</html>

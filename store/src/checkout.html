@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="page.checkout.title"></title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="checkout">
+<!--@include header-->
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-head"><h1 data-i18n="co.title"></h1></div>
+
+    <!-- السلة فارغة -->
+    <div id="co-empty" hidden>
+      <div class="state">
+        <h3 data-i18n="cart.empty.title"></h3>
+        <p data-i18n="cart.empty.text"></p>
+        <a class="btn btn-primary" href="/#packages" data-i18n="cart.empty.cta"></a>
+      </div>
+    </div>
+
+    <div class="checkout-grid" id="co-grid" hidden>
+      <div class="stack">
+        <!-- الخطوة 1: بيانات العميل وطريقة الدفع -->
+        <form id="order-form" class="stack" novalidate autocomplete="on">
+          <fieldset class="stack-sm" id="details">
+            <legend data-i18n="co.details"></legend>
+
+            <div class="two-col">
+              <div class="field">
+                <label for="f-name" data-i18n="co.name"></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="e-name">
+                <p class="error-msg" id="e-name" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="f-email" data-i18n="co.email"></label>
+                <input id="f-email" name="email" type="email" dir="ltr" autocomplete="email" inputmode="email" required maxlength="254" aria-describedby="e-email">
+                <p class="error-msg" id="e-email" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="two-col">
+              <div class="field">
+                <label for="f-phone" data-i18n="co.phone"></label>
+                <input id="f-phone" name="phone" type="tel" dir="ltr" autocomplete="tel" inputmode="tel" required maxlength="24" placeholder="+966 5x xxx xxxx" aria-describedby="e-phone h-phone">
+                <p class="hint" id="h-phone" data-i18n="co.phone.hint"></p>
+                <p class="error-msg" id="e-phone" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="f-company"><span data-i18n="co.company"></span> <span class="opt" data-i18n="co.optional"></span></label>
+                <input id="f-company" name="company" type="text" autocomplete="organization" maxlength="120" aria-describedby="e-company">
+                <p class="error-msg" id="e-company" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-notes"><span data-i18n="co.notes"></span> <span class="opt" data-i18n="co.optional"></span></label>
+              <textarea id="f-notes" name="notes" maxlength="2000" aria-describedby="h-notes e-notes"></textarea>
+              <p class="hint" id="h-notes" data-i18n="co.notes.hint"></p>
+              <p class="error-msg" id="e-notes" role="alert"></p>
+            </div>
+
+            <!-- فخ للبوتات: حقل مخفي لا يراه البشر -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-website">Website</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+          </fieldset>
+
+          <fieldset class="stack-sm" id="method-set">
+            <legend data-i18n="co.method"></legend>
+            <label class="radio-card" id="m-card">
+              <input type="radio" name="method" value="card" checked>
+              <b data-i18n="co.method.card"></b>
+              <span class="hint" data-i18n="co.method.card.hint"></span>
+            </label>
+            <label class="radio-card" id="m-bank">
+              <input type="radio" name="method" value="bank_transfer">
+              <b data-i18n="co.method.bank"></b>
+              <span class="hint" data-i18n="co.method.bank.hint"></span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label class="check" for="f-terms">
+              <input id="f-terms" name="terms" type="checkbox" aria-describedby="e-terms">
+              <span><span data-i18n="co.terms.pre"></span> <a href="/terms" target="_blank" rel="noopener" data-i18n="co.terms.link"></a></span>
+            </label>
+            <p class="error-msg" id="e-terms" role="alert"></p>
+          </div>
+
+          <p class="form-error" id="form-error" role="alert"></p>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn"></button>
+        </form>
+
+        <!-- الخطوة 2: الدفع بعد إنشاء الطلب -->
+        <section class="pay-panel" id="pay-panel" hidden aria-labelledby="pay-title">
+          <h2 id="pay-title" data-i18n="pay.title"></h2>
+          <p class="pay-order tnum" id="pay-order"></p>
+          <p class="pay-test" id="pay-test" hidden data-i18n="pay.test"></p>
+          <div id="pay-form" class="mysr-form"></div>
+          <p class="hint" data-i18n="pay.secure"></p>
+          <a class="link-btn" href="/#packages" data-i18n="pay.back"></a>
+        </section>
+      </div>
+
+      <aside class="summary" aria-labelledby="sum-title">
+        <h2 id="sum-title" style="font-size:1.25rem" data-i18n="co.summary"></h2>
+        <ul id="summary-lines"></ul>
+        <div class="total-row">
+          <span data-i18n="cart.total"></span>
+          <strong id="summary-total" class="tnum"></strong>
+        </div>
+        <p class="hint" data-i18n="co.total.note"></p>
+        <a class="link-btn" id="edit-cart" href="/#packages" data-i18n="co.edit"></a>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!--@include footer-->
+<!--@include cart-drawer-->
+
+<script src="/js/config.js"></script>
+<script src="/vendor/supabase.js" defer></script>
+<script type="module" src="/js/checkout.js"></script>
+</body>
+</html>

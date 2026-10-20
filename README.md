@@ -114,6 +114,11 @@ E2E_BASE_URL=http://localhost:5173 MAILHOG_URL=http://localhost:8025 npm run tes
 webhook وارد `/api/v1/hooks/import`، ملفا n8n (تقرير كل أحد 8 صباحًا، واستيراد ملف)، وواجهات `ErpAdapter` و`StorageProvider` و`MailProvider`.
 التفاصيل: [`integrations/README.md`](integrations/README.md).
 
+## متجر خدمات الفيديو بالذكاء الاصطناعي
+
+مشروع مستقل في [`store/`](store) (لا يؤثر على منصة الالتزام ولا على الموقع التعريفي): متجر بسلة مشتريات ودفع Moyasar وتسجيل الطلبات في Supabase ولوحة إدارة.
+التشغيل والنشر والأمان: [`store/README.md`](store/README.md).
+
 ## ملاحظات صريحة
 
 - **صور docker لم تُبنَ في بيئة التطوير الحالية** (لا يوجد Docker Hub متاح بلا قيود). تحققنا من صحة `docker-compose.yml`

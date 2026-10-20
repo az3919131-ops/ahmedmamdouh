@@ -31,3 +31,27 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: failure()
         with: { name: e2e-output, path: e2e/.output, retention-days: 7 }
+
+  # متجر خدمات الفيديو (store/): اختبارات الوحدات + اختبار مخطط Supabase/RLS على PostgreSQL + البناء
+  store:
+    runs-on: ubuntu-latest
+    defaults:
+      run: { working-directory: store }
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env: { POSTGRES_USER: iltizam, POSTGRES_PASSWORD: iltizam, POSTGRES_DB: postgres }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U iltizam" --health-interval 5s --health-timeout 5s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: store/package-lock.json }
+      - run: npm ci
+      - run: npm test
+      - run: npm run test:db
+        env: { TEST_DATABASE_URL: "postgresql://iltizam:iltizam@127.0.0.1:5432/postgres" }
+      - name: Build (demo mode on purpose; production builds require the Supabase variables)
+        run: npm run build
+        env: { ALLOW_DEMO: "1" }

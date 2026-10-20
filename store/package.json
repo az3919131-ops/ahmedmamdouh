@@ -1,0 +1,22 @@
+{
+  "name": "zahran-ai-studio-store",
+  "private": true,
+  "version": "1.0.0",
+  "description": "متجر خدمات الفيديو بالذكاء الاصطناعي — Supabase + Moyasar + Netlify (HTML/CSS/Vanilla JS)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/dev-server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:db": "bash scripts/test-db.sh"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans-arabic": "5.3.0",
+    "@fontsource/reem-kufi": "5.3.0",
+    "@supabase/supabase-js": "2.118.0",
+    "moyasar-payment-form": "2.3.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

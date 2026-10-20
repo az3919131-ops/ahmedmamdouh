@@ -1,0 +1,16 @@
+# نشر المتجر على Netlify.  Project manager · Eng. Ahmed Zahran
+#
+# Netlify → Add new project → Import from GitHub → اختر المستودع والفرع، ثم اضبط:
+#   Base directory:   store
+#   (باقي الإعدادات تُقرأ من هذا الملف)
+# وأضف المتغيرات من Site configuration → Environment variables (القائمة في store/.env.example و README).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
