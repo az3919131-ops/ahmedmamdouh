@@ -5,7 +5,9 @@
   "description": "محفظة الالتزام للمشاريع للمقاولين — Compliance Vault (Frontend + API + PostgreSQL)",
   "type": "module",
   "workspaces": [
-    "apps/*",
+    "apps/api",
+    "apps/web",
+    "apps/portfolio",
     "packages/*"
   ],
   "scripts": {

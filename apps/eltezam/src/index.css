@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #07111F;
+  --color-deep: #0B1B32;
+  --color-electric: #287BFF;
+  --color-electric-600: #1f63d6;
+  --color-gold: #D6AD60;
+  --color-gold-600: #c0963f;
+  --color-cloud: #F4F6FA;
+  --font-sans: "Cairo", "Tajawal", "Inter", system-ui, sans-serif;
+  --font-display: "Tajawal", "Cairo", "Inter", system-ui, sans-serif;
+  --radius-xl2: 1.25rem;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shine: shine 3s linear infinite;
+  @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+  @keyframes shine { to { background-position: 200% center } }
+}
+
+html { scroll-behavior: smooth; }
+html:lang(en) body { font-family: "Inter", "Cairo", system-ui, sans-serif; }
+body { @apply bg-cloud text-slate-800 antialiased; font-size: 16px; }
+::selection { background: #287BFF33; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .glass { @apply border border-white/10 bg-white/5 backdrop-blur-xl; }
+  .glass-light { @apply border border-white/60 bg-white/70 backdrop-blur-xl; }
+  .text-gradient { background: linear-gradient(90deg, #ffffff, #9cc2ff 45%, #D6AD60); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .text-gradient-blue { background: linear-gradient(90deg, #287BFF, #6aa8ff 50%, #D6AD60); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .glow { box-shadow: 0 0 0 1px #287BFF33, 0 10px 40px -10px #287BFF66; }
+  .grid-bg { background-image: linear-gradient(#ffffff0a 1px, transparent 1px), linear-gradient(90deg, #ffffff0a 1px, transparent 1px); background-size: 48px 48px; }
+  .field { @apply w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-[15px] text-slate-800 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-electric focus:ring-4 focus:ring-electric/15 disabled:opacity-60; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+@media print {
+  body * { visibility: hidden !important; }
+  .print-area, .print-area * { visibility: visible !important; }
+  .print-area { position: absolute; inset: 0; margin: 0; box-shadow: none !important; }
+  @page { size: A4; margin: 12mm; }
+}

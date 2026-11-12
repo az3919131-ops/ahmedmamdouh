@@ -1,0 +1,902 @@
+{
+ "services": [
+  {
+   "slug": "websites",
+   "category": "web",
+   "name": "تصميم المواقع الإلكترونية",
+   "name_en": "Website Design Studio",
+   "description": "مواقع تعريفية وتجارية ومنصات SaaS ولوحات تحكم بتصميم عصري متجاوب وسريع، مبنية حسب فكرتك ونشاطك.",
+   "description_en": "Corporate sites, landing pages, SaaS platforms and dashboards — modern, responsive and built around your idea.",
+   "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000001",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 1,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "ecommerce",
+   "category": "web",
+   "name": "المتاجر والمنصات الرقمية",
+   "name_en": "E‑Commerce Studio",
+   "description": "متاجر إلكترونية ومنصات بيع للشركات والمحلات والأنشطة التجارية مع إدارة المنتجات والطلبات والعملاء.",
+   "description_en": "Online stores and sales platforms for companies, shops and retail with product, order and customer management.",
+   "image_url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000002",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 2,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "ai-content",
+   "category": "ai",
+   "name": "الذكاء الاصطناعي وصناعة المحتوى",
+   "name_en": "AI Content Studio",
+   "description": "مقالات ومنشورات وإعلانات وخطط محتوى وسكربتات متعددة اللغات بمساعدة الذكاء الاصطناعي ومراجعة بشرية.",
+   "description_en": "Articles, posts, ads, content plans and scripts in multiple languages — AI-assisted, human-reviewed.",
+   "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000003",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 3,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "data-analytics",
+   "category": "data",
+   "name": "تحليل البيانات وPower BI",
+   "name_en": "Data Analytics & Power BI",
+   "description": "لوحات Power BI وتقارير Excel وتحليل المبيعات والمخزون ومؤشرات الأداء وتنظيف البيانات.",
+   "description_en": "Power BI dashboards, Excel reporting, sales/inventory/KPI analysis and data cleaning.",
+   "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000004",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 4,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "automation",
+   "category": "ai",
+   "name": "الأتمتة والأنظمة الذكية",
+   "name_en": "AI Automation Studio",
+   "description": "وكلاء ذكاء اصطناعي وسير عمل n8n وربط التطبيقات وأتمتة البريد والتقارير وخدمة العملاء.",
+   "description_en": "AI agents, n8n workflows, app integrations, email/report automation and customer-service systems.",
+   "image_url": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000005",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 5,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "cv-studio",
+   "category": "career",
+   "name": "إنشاء وتصميم CV احترافي",
+   "name_en": "CV Studio",
+   "description": "سير ذاتية عربية وإنجليزية متوافقة مع ATS، وخطابات تغطية وملفات LinkedIn ومطابقة مع الوصف الوظيفي.",
+   "description_en": "Arabic & English ATS-friendly CVs, cover letters, LinkedIn profiles and job-description matching.",
+   "image_url": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000006",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 6,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "slug": "video-studio",
+   "category": "media",
+   "name": "إنتاج فيديوهات الأعمال والإعلانات",
+   "name_en": "AI Business Video Studio",
+   "description": "إعلانات وفيديوهات تعريفية وReels وموشن جرافيك: من الفكرة والسيناريو حتى التسليم النهائي.",
+   "description_en": "Ads, corporate films, Reels and motion graphics — from idea and script to final delivery.",
+   "image_url": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=70",
+   "id": "00000000-0000-4000-8000-000000000007",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 7,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000008",
+   "slug": "academy",
+   "category": "training",
+   "name": "أكاديمية التزام – الدورات والشهادات",
+   "name_en": "ELTEZAM Academy – Courses & Certificates",
+   "description": "دورات عملية في إدارة المشاريع والتحليل الفني والمالي وتصميم المواقع بالذكاء الاصطناعي وVibe Coding وخبرات هندسية وبرمجية وإدارية، مع شهادة إتمام.",
+   "description_en": "Practical courses in project management, technical & financial analysis, AI-powered web design, vibe coding and engineering, programming and management skills — with a completion certificate.",
+   "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70",
+   "price": null,
+   "show_on_home": true,
+   "sort_order": 8,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  }
+ ],
+ "packages": [
+  {
+   "id": "00000000-0000-4000-8000-000000000100",
+   "service_id": "00000000-0000-4000-8000-000000000006",
+   "name": "CV Basic",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "سيرة ذاتية بلغة واحدة",
+    "قالب ATS بسيط",
+    "ملف PDF وWord"
+   ],
+   "revisions_limit": 1,
+   "delivery_days": 3,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000101",
+   "service_id": "00000000-0000-4000-8000-000000000006",
+   "name": "CV Professional",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "سيرة ذاتية عربي + إنجليزي",
+    "Professional Summary",
+    "تحسين الكلمات المفتاحية",
+    "Cover Letter"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 4,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000102",
+   "service_id": "00000000-0000-4000-8000-000000000006",
+   "name": "CV Premium",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "كل مزايا Professional",
+    "ملف LinkedIn احترافي",
+    "مطابقة مع 3 وظائف مستهدفة",
+    "قوالب Creative"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": 5,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000103",
+   "service_id": "00000000-0000-4000-8000-000000000007",
+   "name": "Business Video Basic",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "فيديو حتى 30 ثانية",
+    "سيناريو وStoryboard",
+    "مقاس واحد"
+   ],
+   "revisions_limit": 1,
+   "delivery_days": 5,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000104",
+   "service_id": "00000000-0000-4000-8000-000000000007",
+   "name": "Business Video Pro",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "فيديو حتى 60 ثانية",
+    "تعليق صوتي وترجمة",
+    "مقاسان (16:9 و9:16)"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 7,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000105",
+   "service_id": "00000000-0000-4000-8000-000000000007",
+   "name": "Business Video Premium",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "فيديو حتى 90 ثانية",
+    "حملة من 3 فيديوهات",
+    "كل المقاسات 16:9 و9:16 و1:1",
+    "موشن جرافيك"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": 10,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000106",
+   "service_id": "00000000-0000-4000-8000-000000000001",
+   "name": "Landing Page",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "صفحة هبوط واحدة",
+    "تصميم متجاوب",
+    "نموذج تواصل"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 5,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000107",
+   "service_id": "00000000-0000-4000-8000-000000000001",
+   "name": "Business Website",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "حتى 8 صفحات",
+    "لوحة تحكم بالمحتوى",
+    "تحسين SEO أساسي"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": 14,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000108",
+   "service_id": "00000000-0000-4000-8000-000000000002",
+   "name": "E‑Commerce",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "إدارة المنتجات والتصنيفات",
+    "سلة وطلبات",
+    "كوبونات وتقارير مبيعات"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": 21,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000109",
+   "service_id": "00000000-0000-4000-8000-000000000001",
+   "name": "Custom Platform",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "منصة أو نظام مخصص",
+    "صلاحيات ومستخدمون",
+    "تكاملات حسب الحاجة"
+   ],
+   "revisions_limit": 4,
+   "delivery_days": null,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000110",
+   "service_id": "00000000-0000-4000-8000-000000000004",
+   "name": "Excel Analysis",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "تنظيف وتنظيم البيانات",
+    "جداول محورية ورسوم",
+    "تقرير ملخص"
+   ],
+   "revisions_limit": 1,
+   "delivery_days": 3,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000111",
+   "service_id": "00000000-0000-4000-8000-000000000004",
+   "name": "Power BI Dashboard",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "لوحة Power BI تفاعلية",
+    "مؤشرات KPIs",
+    "تحديث من مصدر البيانات"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 7,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000112",
+   "service_id": "00000000-0000-4000-8000-000000000004",
+   "name": "Advanced Data Analytics",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "تحليل متقدم واتجاهات",
+    "عدة لوحات وتقارير",
+    "توصيات إدارية"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": 14,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000113",
+   "service_id": "00000000-0000-4000-8000-000000000003",
+   "name": "AI Content Package",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "خطة محتوى شهرية",
+    "منشورات وإعلانات",
+    "محتوى متعدد اللغات"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 7,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000114",
+   "service_id": "00000000-0000-4000-8000-000000000005",
+   "name": "AI Automation Basic",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "سير عمل n8n واحد",
+    "ربط حتى 3 تطبيقات",
+    "توثيق وتشغيل"
+   ],
+   "revisions_limit": 2,
+   "delivery_days": 7,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000115",
+   "service_id": "00000000-0000-4000-8000-000000000005",
+   "name": "Custom AI Solution",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "وكيل ذكاء اصطناعي مخصص",
+    "تكامل مع أنظمتك",
+    "دعم بعد التسليم"
+   ],
+   "revisions_limit": 3,
+   "delivery_days": null,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000200",
+   "service_id": "00000000-0000-4000-8000-000000000008",
+   "name": "Academy – دورة فردية",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "دورة واحدة من الكتالوج",
+    "مواد تدريبية",
+    "شهادة إتمام من التزام"
+   ],
+   "revisions_limit": 0,
+   "delivery_days": null,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000201",
+   "service_id": "00000000-0000-4000-8000-000000000008",
+   "name": "Academy – مسار احترافي",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "3 دورات ضمن مسار",
+    "تطبيقات عملية ومشروع ختامي",
+    "شهادة مسار من التزام"
+   ],
+   "revisions_limit": 0,
+   "delivery_days": null,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000202",
+   "service_id": "00000000-0000-4000-8000-000000000008",
+   "name": "Academy – تدريب الشركات",
+   "price": null,
+   "currency": "SAR",
+   "features": [
+    "برنامج مخصص لفريقك",
+    "حضوري أو أونلاين",
+    "تقارير حضور وشهادات للمتدربين"
+   ],
+   "revisions_limit": 0,
+   "delivery_days": null,
+   "active": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  }
+ ],
+ "portfolio_items": [
+  {
+   "id": "00000000-0000-4000-8000-000000000300",
+   "title": "موقع شركة مقاولات (نموذج)",
+   "title_en": "Contracting company website (demo)",
+   "category": "websites",
+   "description": "نموذج تجريبي لموقع تعريفي لشركة مقاولات: مشاريع، خدمات، وطلب عرض سعر.",
+   "image_url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "React",
+    "Tailwind",
+    "CMS"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000301",
+   "title": "متجر أزياء إلكتروني (نموذج)",
+   "title_en": "Fashion e‑store (demo)",
+   "category": "ecommerce",
+   "description": "نموذج تجريبي لمتجر ملابس مع سلة وطلبات وكوبونات.",
+   "image_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "E‑Commerce",
+    "Payments-ready"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000302",
+   "title": "خطة محتوى شهرية (نموذج)",
+   "title_en": "Monthly content plan (demo)",
+   "category": "ai-content",
+   "description": "نموذج تجريبي لخطة محتوى لمنصات التواصل مع منشورات وإعلانات.",
+   "image_url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "AI Writing",
+    "Social Media"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000303",
+   "title": "سيرة ذاتية لمهندس – ATS (نموذج)",
+   "title_en": "Engineer CV – ATS (demo)",
+   "category": "cv",
+   "description": "نموذج تجريبي لسيرة ذاتية متوافقة مع أنظمة ATS بالعربية والإنجليزية.",
+   "image_url": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "ATS",
+    "Bilingual"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000304",
+   "title": "فيديو إعلاني لمنتج (نموذج)",
+   "title_en": "Product ad video (demo)",
+   "category": "video",
+   "description": "نموذج تجريبي لفيديو إعلاني قصير بمقاس 16:9.",
+   "image_url": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=70",
+   "video_url": "/videos/hero.mp4",
+   "project_url": null,
+   "technologies": [
+    "Script",
+    "Storyboard",
+    "Motion"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000305",
+   "title": "لوحة مبيعات Power BI (نموذج)",
+   "title_en": "Sales Power BI dashboard (demo)",
+   "category": "data",
+   "description": "نموذج تجريبي للوحة مؤشرات مبيعات ومخزون.",
+   "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "Power BI",
+    "Excel"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000306",
+   "title": "أتمتة الرد على العملاء (نموذج)",
+   "title_en": "Customer reply automation (demo)",
+   "category": "automation",
+   "description": "نموذج تجريبي لسير عمل n8n للرد الآلي وتسجيل الطلبات.",
+   "image_url": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "n8n",
+    "AI Agent",
+    "WhatsApp"
+   ],
+   "is_demo": true,
+   "featured": true,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000307",
+   "title": "Reel تعريفي بمشروع عقاري (نموذج)",
+   "title_en": "Real‑estate Reel (demo)",
+   "category": "video",
+   "description": "نموذج تجريبي لفيديو عمودي 9:16 لمشروع عقاري.",
+   "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=70",
+   "video_url": "/videos/hero.mp4",
+   "project_url": null,
+   "technologies": [
+    "Reels",
+    "9:16"
+   ],
+   "is_demo": true,
+   "featured": false,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000320",
+   "title": "شهادة إتمام دورة إدارة المشاريع (نموذج)",
+   "title_en": "Project management course certificate (demo)",
+   "category": "academy",
+   "description": "نموذج تجريبي لشهادة إتمام تصدر من أكاديمية التزام بعد اجتياز الدورة.",
+   "image_url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=70",
+   "video_url": null,
+   "project_url": null,
+   "technologies": [
+    "PMP Prep",
+    "Certificate"
+   ],
+   "is_demo": true,
+   "featured": false,
+   "published": true,
+   "created_at": "2026-01-01T00:00:00Z"
+  }
+ ],
+ "site_settings": [
+  {
+   "id": "00000000-0000-4000-8000-000000000500",
+   "setting_key": "whatsapp_number",
+   "setting_value": "966565324387",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000501",
+   "setting_key": "contact_email",
+   "setting_value": "",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000502",
+   "setting_key": "contact_phone",
+   "setting_value": "",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000503",
+   "setting_key": "social_links",
+   "setting_value": {
+    "linkedin": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "tiktok": ""
+   },
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000504",
+   "setting_key": "hero",
+   "setting_value": {
+    "title": "من مجرد فكرة.. إلى مشروع رقمي متكامل.",
+    "subtitle": "نصمم المواقع، ونبني الأنظمة الذكية، وننتج المحتوى والفيديوهات، ونحول البيانات إلى قرارات.. كل ذلك تحت سقف واحد.",
+    "video_url": "/videos/hero.mp4",
+    "poster_url": "/images/hero-poster.jpg"
+   },
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000505",
+   "setting_key": "banner",
+   "setting_value": {
+    "enabled": false,
+    "text": ""
+   },
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000506",
+   "setting_key": "faq",
+   "setting_value": [
+    {
+     "q": "ما الخدمات التي تقدمها التزام؟",
+     "a": "تصميم المواقع والمتاجر، صناعة المحتوى بالذكاء الاصطناعي، تحليل البيانات وPower BI، الأتمتة والأنظمة الذكية، إنشاء السير الذاتية، وإنتاج فيديوهات الأعمال."
+    },
+    {
+     "q": "هل يمكن تصميم موقع حسب فكرة خاصة؟",
+     "a": "نعم، كل مشروع يُبنى حسب فكرتك واحتياجك. أرسل الفكرة من صفحة الخدمة وسنراجعها معك."
+    },
+    {
+     "q": "هل يوجد تجربة مجانية؟",
+     "a": "نعم، عند إنشاء حساب تبدأ تجربة مجانية للوظائف التجريبية المحددة في كل خدمة."
+    },
+    {
+     "q": "ما مدة التجربة المجانية؟",
+     "a": "24 ساعة تبدأ من وقت تأكيد التسجيل على الخادم، ويظهر لك عداد الوقت المتبقي في لوحة التحكم."
+    },
+    {
+     "q": "كيف أطلب خدمة؟",
+     "a": "اختر الخدمة، املأ نموذج الطلب وأرفق ملفاتك، ثم تابع حالة الطلب من لوحة العميل."
+    },
+    {
+     "q": "كيف يتم تسعير المشاريع؟",
+     "a": "بعد مراجعة الطلب نرسل لك عرض سعر حسب نطاق العمل والباقة المناسبة، ولا يبدأ التنفيذ إلا بعد موافقتك."
+    },
+    {
+     "q": "هل يمكن إنشاء CV باللغة الإنجليزية؟",
+     "a": "نعم، يدعم استوديو السيرة الذاتية العربية والإنجليزية وقوالب متوافقة مع ATS."
+    },
+    {
+     "q": "هل يمكن إنتاج فيديو إعلاني؟",
+     "a": "نعم، نستقبل طلبات الفيديو ونجهز الفكرة والسيناريو والـ Storyboard ثم ننفذ الإنتاج ونسلمه بالمقاس المطلوب."
+    },
+    {
+     "q": "هل يمكن تحليل ملفات Excel؟",
+     "a": "نعم، يمكنك رفع ملفات CSV وExcel ومعاينتها وتحديد هدف التحليل وإرسال الطلب."
+    },
+    {
+     "q": "كيف أتابع تنفيذ مشروعي؟",
+     "a": "من لوحة العميل: مراحل المشروع، التحديثات، الملفات، الرسائل، وطلبات التعديل والاعتماد."
+    },
+    {
+     "q": "ما طرق التواصل؟",
+     "a": "واتساب ونموذج التواصل والرسائل داخل لوحة العميل."
+    },
+    {
+     "q": "هل يمكن تعديل المشروع بعد التسليم؟",
+     "a": "نعم ضمن عدد التعديلات المحدد في الباقة، ويمكن طلب تعديلات إضافية بعرض سعر."
+    }
+   ],
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000507",
+   "setting_key": "about",
+   "setting_value": "التزام منصة رقمية متخصصة في تصميم المواقع وتطوير الحلول الذكية وتحليل البيانات وإنتاج المحتوى والفيديوهات باستخدام أحدث تقنيات الذكاء الاصطناعي.\n\nبإدارة المهندس أحمد زهران، نعمل على تحويل الأفكار إلى حلول رقمية عملية، بداية من التخطيط والتصميم وحتى التطوير والتنفيذ والتسليم.\n\nنؤمن بأن كل فكرة تستحق أن تتحول إلى مشروع ناجح، ونعمل على تسهيل الوصول إلى التكنولوجيا والحلول الرقمية بطريقة احترافية.",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000508",
+   "setting_key": "cv_templates",
+   "setting_value": [
+    {
+     "id": "ats",
+     "name": "ATS بسيط",
+     "active": true
+    },
+    {
+     "id": "professional",
+     "name": "Professional",
+     "active": true
+    },
+    {
+     "id": "creative",
+     "name": "Creative",
+     "active": true
+    },
+    {
+     "id": "executive",
+     "name": "Executive",
+     "active": true
+    }
+   ],
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000509",
+   "setting_key": "video_templates",
+   "setting_value": [
+    "شركات",
+    "مقاولات",
+    "مطاعم",
+    "متاجر",
+    "عقارات",
+    "تعليم"
+   ],
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000510",
+   "setting_key": "privacy_policy",
+   "setting_value": "مسودة سياسة الخصوصية — يجب مراجعتها قبل الإطلاق.\n\nنجمع البيانات التي تقدمها عند التسجيل وطلب الخدمات (الاسم، البريد، الهاتف، ملفات المشروع) لاستخدامها في تقديم الخدمة والتواصل معك فقط. لا نبيع بياناتك ولا نشاركها إلا مع مزودي الخدمات اللازمين للتشغيل (الاستضافة وقاعدة البيانات ومزودي الذكاء الاصطناعي عند استخدامك لهذه الميزات). لا نخزن بيانات البطاقات البنكية. يمكنك طلب حذف حسابك وبياناتك بالتواصل معنا.",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000511",
+   "setting_key": "terms_of_service",
+   "setting_value": "مسودة الشروط والأحكام — يجب مراجعتها قبل الإطلاق.\n\nالتجربة المجانية مدتها 24 ساعة وتشمل وظائف تجريبية محدودة. لا يتحول الحساب إلى اشتراك مدفوع تلقائيًا. يبدأ تنفيذ أي مشروع بعد الموافقة على عرض السعر وتأكيد الدفع من الإدارة. عدد التعديلات ومدة التنفيذ حسب الباقة المتفق عليها. المحتوى المُولد بالذكاء الاصطناعي يخضع لمراجعتك قبل الاعتماد، ولا يضيف بيانات أو مؤهلات لم تقدمها.",
+   "updated_at": "2026-01-01T00:00:00Z"
+  },
+  {
+   "id": "00000000-0000-4000-8000-000000000520",
+   "setting_key": "courses",
+   "setting_value": [
+    {
+     "id": "pm",
+     "title": "إدارة المشاريع الاحترافية والتأهيل لاختبار PMP",
+     "title_en": "Professional Project Management & PMP Prep",
+     "category": "management",
+     "level": "متوسط",
+     "hours": 35,
+     "description": "مبادئ إدارة المشاريع وفق دليل PMBOK: النطاق والجدولة والتكلفة والمخاطر وأصحاب المصلحة، مع أسئلة تدريبية للتأهيل لاختبار PMP. (شهادة إتمام من التزام، وليست شهادة PMI الرسمية).",
+     "active": true
+    },
+    {
+     "id": "agile",
+     "title": "إدارة المشاريع الرشيقة Agile وScrum",
+     "title_en": "Agile & Scrum Project Management",
+     "category": "management",
+     "level": "مبتدئ",
+     "hours": 16,
+     "description": "أطر العمل الرشيقة، أدوار Scrum، إدارة الـ Backlog والـ Sprints عمليًا.",
+     "active": true
+    },
+    {
+     "id": "p6",
+     "title": "تخطيط وجدولة المشاريع Primavera P6 وMS Project",
+     "title_en": "Project Planning with Primavera P6 & MS Project",
+     "category": "engineering",
+     "level": "متوسط",
+     "hours": 24,
+     "description": "إعداد البرنامج الزمني وتحميل الموارد ومتابعة التقدم وتقارير الإنجاز للمشاريع الهندسية.",
+     "active": true
+    },
+    {
+     "id": "contracts",
+     "title": "الإدارة الهندسية وإدارة عقود المقاولات",
+     "title_en": "Engineering Management & Construction Contracts",
+     "category": "engineering",
+     "level": "متوسط",
+     "hours": 20,
+     "description": "إدارة العقود والمستخلصات وأوامر التغيير والمطالبات ومتابعة المقاولين.",
+     "active": true
+    },
+    {
+     "id": "ta",
+     "title": "التحليل الفني للأسواق المالية",
+     "title_en": "Technical Analysis of Financial Markets",
+     "category": "finance",
+     "level": "مبتدئ",
+     "hours": 20,
+     "description": "الشموع اليابانية والاتجاهات والدعوم والمقاومات والمؤشرات الفنية وإدارة المخاطر. (محتوى تعليمي وليس توصيات استثمارية).",
+     "active": true
+    },
+    {
+     "id": "fa",
+     "title": "التحليل المالي وقراءة القوائم المالية",
+     "title_en": "Financial Analysis & Financial Statements",
+     "category": "finance",
+     "level": "متوسط",
+     "hours": 20,
+     "description": "قراءة الميزانية وقائمة الدخل والتدفقات النقدية، النسب المالية، وتقييم أداء الشركات.",
+     "active": true
+    },
+    {
+     "id": "webai",
+     "title": "تصميم وتخطيط المواقع وربطها بالذكاء الاصطناعي",
+     "title_en": "Website Design & Planning Integrated with AI",
+     "category": "tech",
+     "level": "مبتدئ",
+     "hours": 24,
+     "description": "تخطيط الموقع وتجربة المستخدم، بناء الصفحات، والنشر على Netlify، وربط الموقع بأدوات الذكاء الاصطناعي ونماذج المحادثة.",
+     "active": true
+    },
+    {
+     "id": "vibe",
+     "title": "Vibe Coding: البرمجة بمساعدة الذكاء الاصطناعي",
+     "title_en": "Vibe Coding: Building Software with AI",
+     "category": "tech",
+     "level": "مبتدئ",
+     "hours": 18,
+     "description": "بناء تطبيقات ومواقع حقيقية بالحوار مع أدوات الذكاء الاصطناعي مثل Claude Code، ومراجعة الكود ونشره بأمان.",
+     "active": true
+    },
+    {
+     "id": "prog",
+     "title": "أساسيات البرمجة Python وJavaScript",
+     "title_en": "Programming Fundamentals: Python & JavaScript",
+     "category": "tech",
+     "level": "مبتدئ",
+     "hours": 30,
+     "description": "المتغيرات والدوال وهياكل البيانات وبناء مشاريع صغيرة عملية.",
+     "active": true
+    },
+    {
+     "id": "powerbi",
+     "title": "Power BI وتحليل البيانات للإدارة",
+     "title_en": "Power BI & Data Analysis for Managers",
+     "category": "data",
+     "level": "متوسط",
+     "hours": 20,
+     "description": "تنظيف البيانات وبناء النماذج ولوحات المؤشرات KPIs والتقارير التفاعلية.",
+     "active": true
+    },
+    {
+     "id": "excel",
+     "title": "Excel المتقدم للمهندسين والإداريين",
+     "title_en": "Advanced Excel for Engineers & Managers",
+     "category": "data",
+     "level": "مبتدئ",
+     "hours": 14,
+     "description": "الدوال المتقدمة والجداول المحورية والتحقق من البيانات والتقارير الآلية.",
+     "active": true
+    },
+    {
+     "id": "n8n",
+     "title": "أتمتة الأعمال بـ n8n ووكلاء الذكاء الاصطناعي",
+     "title_en": "Business Automation with n8n & AI Agents",
+     "category": "tech",
+     "level": "متوسط",
+     "hours": 16,
+     "description": "تصميم سير عمل لأتمتة البريد والتقارير وخدمة العملاء وربط التطبيقات.",
+     "active": true
+    },
+    {
+     "id": "leadership",
+     "title": "القيادة والإدارة الفعالة للفرق",
+     "title_en": "Leadership & Effective Team Management",
+     "category": "management",
+     "level": "مبتدئ",
+     "hours": 12,
+     "description": "التخطيط وتفويض المهام والتواصل الفعال وإدارة الأداء.",
+     "active": true
+    }
+   ],
+   "updated_at": "2026-01-01T00:00:00Z"
+  }
+ ]
+}

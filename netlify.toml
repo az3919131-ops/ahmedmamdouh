@@ -1,9 +1,40 @@
-# نشر موقع أحمد زهران (apps/portfolio) على Netlify مباشرة من هذا المستودع.
-# Netlify: Add new project ← Import from GitHub ← اختر المستودع والفرع ← Deploy (كل الإعدادات تُقرأ من هنا).
+# ELTEZAM – التزام لتصميم المواقع (apps/eltezam) — Netlify deploy config.
+# Netlify: Add new site ← Import from GitHub ← choose this repo/branch ← Deploy (settings are read from here).
+# Secrets (SUPABASE_SERVICE_ROLE_KEY, ANTHROPIC_API_KEY, …) go in Site settings → Environment variables, never in this file.
 [build]
-  command = "npm run build -w @nmwabran/portfolio"
-  publish = "apps/portfolio/dist"
+  base = "apps/eltezam"
+  command = "npm ci && npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "22"
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
+
+[functions]
+  node_bundler = "esbuild"
+
+# SPA fallback — static files and /.netlify/functions/* are matched first, so this never shadows them.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob: https:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src https://www.youtube-nocookie.com https://player.vimeo.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
